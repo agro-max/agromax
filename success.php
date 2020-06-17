@@ -1,22 +1,3 @@
-<?php
-require_once dirname(__FILE__) . '/kclick_client.php';
-$client = new KClickClient('http://195.133.1.133/api.php?', 'VvM3R45BNm8rxM9j');
-$client->restoreFromSession();
-
-// Send postback 
-$params = array("subid" => $client->getSubId(), "status" => "lead", "payout" => 0);
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, "//195.133.1.133/9570a0b/postback");
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-curl_setopt($ch, CURLOPT_POSTFIELDS, $params);
-curl_setopt($ch, CURLOPT_POST, 1);
-$output = curl_exec($ch); 
-// echo $output; 
-curl_close($ch); 
-?>
-
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 
@@ -54,7 +35,7 @@ curl_close($ch);
 </head>
 
 <body class="fon">
-<img height="1" width="1" src="https://www.facebook.com/tr?id=2457717211146580&ev=Lead&noscript=1"/> 
+<img height="1" width="1" src="https://www.faceb321ook.3com/tr?id=!!!!!!!!0&ev=Lead&noscript=1"/> 
     <div class="wrap_block_success">
         <div id="secondary" class="widget-area" role="complementary">
             <aside id="blog_subscription-2" class="widget jetpack_subscription_widget">
